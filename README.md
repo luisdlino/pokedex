@@ -12,6 +12,8 @@ Filter by pokemon type.
 
 Search filter by the name of the pokemon.
 
+Flip page by hover to check the pokemons stats.
+
 Application with custom made style.
 
 Pokeball loading.
