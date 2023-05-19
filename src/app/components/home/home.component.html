@@ -1,0 +1,25 @@
+
+<div class="home">
+
+  <div class="searchBar">
+    <input type="text" [(ngModel)]="searchText" placeholder="Search you pokemon name...">
+  </div>
+
+  <div class="content">
+    <div class="filter">
+      <h2>Type</h2>
+      <div class="filterItem" *ngFor="let type of filteredTypes; let i = index">
+        <input type="checkbox" (change)="setType($event, type, i)" [id]="type" [name]="type" [value]="type">
+        <label class="type {{type}}" [for]="type">{{type}}</label><br>
+      </div>
+    </div>
+
+    <div *ngIf="pokemons" class="pokemon-list">
+      <ng-container *ngFor="let p of pokemons | appFilter: searchText">
+        <pokeCard [pokemon]="p" [selectedTypes]="selectedTypes"></pokeCard>
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+<loading-app *ngIf="loading"></loading-app>

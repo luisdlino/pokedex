@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+@font-face {
+  font-family: pokemonFont;
+  src: url(assets/fonts/PokemonHollow.ttf) format('truetype');
+}
+
+body {
+  background: #f0f0f0;
+  height: 100%;
+  margin: 0;
+  font-family: 'Open Sans';
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

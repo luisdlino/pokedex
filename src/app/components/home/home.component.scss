@@ -1,0 +1,121 @@
+.home {
+
+  .searchBar {
+    width: 600px;
+    margin-left: 102px;
+    margin-top: 40px;
+
+    input {
+      width: 100%;
+      border-radius: 15px;
+      height: 28px;
+      padding-left: 16px;
+      font-weight: bold;
+    }
+  }
+
+  .content {
+    margin: 40px 100px 16px 100px;
+    min-height: 300px;
+    display: flex;
+  }
+
+  .filter {
+    background-color: #fff;
+    border: 1px solid #222224;
+    border-radius: 15px;
+    padding: 0px 16px 0 16px;
+    width: 100px;
+    margin-right: 60px;
+    height: 585px;
+
+    .filterItem {
+      margin-bottom: 10px;
+      label {
+        position: relative;
+        bottom: 1px;
+        width: 50px;
+        border-radius: 25px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 700;
+        cursor: pointer;
+        &.type {
+          &.poison {
+            background-color: #aa5799;
+          }
+          &.fire {
+            background-color: #ff5433;
+          }
+
+          &.flying {
+            background-color: #6992fd;
+          }
+
+          &.water {
+            background-color: #2f9afd;
+          }
+
+          &.bug {
+            background-color: #a7b723;
+          }
+
+          &.normal {
+            background-color: #d8d8c8;
+          }
+
+          &.electric {
+            background-color: #f5cc48;
+          }
+
+          &.ground {
+            background-color: #d9c176;
+          }
+
+          &.fairy {
+            background-color: #ffa7f9;
+          }
+
+          &.psychic {
+            background-color: #ff5496;
+          }
+
+          &.fighting {
+            background-color: #ba5747;
+          }
+
+          &.rock {
+            background-color: #baaa68;
+          }
+
+          &.ice {
+            background-color: #89dbf4;
+          }
+
+          &.ghost {
+            background-color: #6666c1;
+          }
+
+          &.steel {
+            background-color: #aaaaba;
+          }
+          &.dragon {
+            background-color: #7765f1;
+          }
+          &.grass {
+            background-color: #78cb57;
+          }
+        }
+      }
+    }
+  }
+
+  .pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+}

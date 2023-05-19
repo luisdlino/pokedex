@@ -1,0 +1,20 @@
+
+<div class="pokemon-item" *ngIf="checkType(pokemon)">
+  <div class="inner">
+    <div class="front">
+      <img width="150" height="150" src="{{pokemon.sprites.other.home.front_default}}">
+      <h3>{{pokemon.name | titlecase}}</h3>
+      <div class="types">
+        <div *ngFor="let type of pokemon.types" class="type {{type.type.name}}">{{type.type.name}}</div>
+      </div>
+    </div>
+    <div class="back">
+      <img width="100" height="100" src="{{pokemon.sprites.front_default}}">
+      <div class="stats">
+        <div *ngFor="let stat of pokemon.stats">
+          <p>{{stat.stat.name}}: {{stat.base_stat}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
